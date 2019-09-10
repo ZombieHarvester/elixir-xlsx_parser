@@ -34,12 +34,12 @@ defmodule XlsxParser.XmlParser do
         _ -> shared_strings[text]
       end
 
-    text =
-      if String.contains?("#{text}", "\n") do
-        '"' ++ text ++ '"'
-      else
-        text
-      end
+    # text =
+    #   if String.contains?("#{text}", "\n") do
+    #     '"' ++ text ++ '"'
+    #   else
+    #     text
+    #   end
 
     {col, row} = parse_col_row(col_row)
     {col, row, "#{text}"}
