@@ -156,4 +156,10 @@ defmodule XlsxParserTest do
               ]} = XlsxParser.get_sheet_content("sample-xlsx-file.xlsx", 2)
     end
   end
+
+  test "parse_shared_strings" do
+    shared_strings_xml = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<sst xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\" count=\"2\" uniqueCount=\"2\"><si><t>Hello</t></si><si><t>Alcantara</t></si></sst>"
+
+    assert %{'0' => 'Hello', '1' => 'Alcantara'} = XlsxParser.XmlParser.parse_shared_strings(shared_strings_xml)
+  end
 end
