@@ -37,7 +37,7 @@ defmodule XlsxParser.MixProject do
       {:earmark, "~> 1.3.1", only: :dev},
       {:ex_doc, "~> 0.19.2", only: :dev},
       {:ex_unit_notifier, "~> 0.1", only: :test},
-      {:mix_test_watch, "~> 0.8", only: :dev, runtime: false},
+      {:mix_test_watch, "~> 1.0", only: :dev, runtime: false},
       {:excoveralls, "~> 0.10.3", only: :test},
       {:credo, "~> 1.0.0", only: [:dev, :test], runtime: false}
     ]
