@@ -32,14 +32,21 @@ defmodule XlsxParser.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      # prod
       {:sweet_xml, "~> 0.6.5"},
-      {:simple_agent, "~> 0.0.7", only: :test},
+
+      # dev
       {:earmark, "~> 1.4", only: :dev},
       {:ex_doc, "~> 0.21", only: :dev},
-      {:ex_unit_notifier, "~> 0.1", only: :test},
       {:mix_test_watch, "~> 1.0", only: :dev, runtime: false},
+
+      # dev and test
+      {:credo, "~> 1.1", only: [:dev, :test], runtime: false},
+
+      # test
+      {:ex_unit_notifier, "~> 0.1", only: :test},
       {:excoveralls, "~> 0.12", only: :test},
-      {:credo, "~> 1.1", only: [:dev, :test], runtime: false}
+      {:simple_agent, "~> 0.0.7", only: :test},
     ]
   end
 
