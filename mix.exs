@@ -34,12 +34,12 @@ defmodule XlsxParser.MixProject do
     [
       {:sweet_xml, "~> 0.6.5"},
       {:simple_agent, "~> 0.0.7", only: :test},
-      {:earmark, "~> 1.3.1", only: :dev},
-      {:ex_doc, "~> 0.19.2", only: :dev},
+      {:earmark, "~> 1.4", only: :dev},
+      {:ex_doc, "~> 0.21", only: :dev},
       {:ex_unit_notifier, "~> 0.1", only: :test},
-      {:mix_test_watch, "~> 0.8", only: :dev, runtime: false},
-      {:excoveralls, "~> 0.10.3", only: :test},
-      {:credo, "~> 1.0.0", only: [:dev, :test], runtime: false}
+      {:mix_test_watch, "~> 1.0", only: :dev, runtime: false},
+      {:excoveralls, "~> 0.12", only: :test},
+      {:credo, "~> 1.1", only: [:dev, :test], runtime: false}
     ]
   end
 
