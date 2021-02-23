@@ -44,7 +44,7 @@ defmodule XlsxParser.MixProject do
       {:credo, "~> 1.1", only: [:dev, :test], runtime: false},
 
       # test
-      {:ex_unit_notifier, "~> 0.1", only: :test},
+      {:ex_unit_notifier, "~> 1.1", only: :test},
       {:excoveralls, "~> 0.12", only: :test},
       {:simple_agent, "~> 0.0.7", only: :test},
     ]
