@@ -33,7 +33,7 @@ defmodule XlsxParser.MixProject do
   defp deps do
     [
       # prod
-      {:sweet_xml, "~> 0.6.5"},
+      {:sweet_xml, "~> 0.7"},
 
       # dev
       {:earmark, "~> 1.4", only: :dev},
